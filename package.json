@@ -2,7 +2,7 @@
   "name": "react",
   "version": "1.0.0",
   "description": "Learning React",
-  "main": "App.js",
+  "source": "App.js",
   "scripts": {
     "test": "jest"
   },
@@ -18,5 +18,9 @@
   "homepage": "https://github.com/aryan21617/Demo-repo#readme",
   "devDependencies": {
     "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   }
 }
