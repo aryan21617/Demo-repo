@@ -1,0 +1,22 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Learning React",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aryan21617/Demo-repo.git"
+  },
+  "author": "Aryan Purbey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aryan21617/Demo-repo/issues"
+  },
+  "homepage": "https://github.com/aryan21617/Demo-repo#readme",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  }
+}
