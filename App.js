@@ -8,22 +8,32 @@ const jsxHeading = (
   </h1> 
 );
 
-const HeadingComponent = () => (
-   <h1> Hello World from Functional Component </h1> 
-);
 
 const number = 1000 ;
 
-const HeadingComponent2 = () => (
+
+const elem = <span> Hello World </span>;
+
+const HeadingComponent = () => (
   <div>
-    <HeadingComponent />  
     {number}      {/* JavaScript inside JSX */}
     {jsxHeading}    {   /*JSX inside JSX */}
     <h1> Hello World from Functional Component 2 </h1>
+    {Title}    
   </div>
-) ;
+) ;  //infinite loop 
+
+const Title = () => (
+  <h1> 
+    {elem}
+    Hello World from Functional Component 
+    <HeadingComponent />
+  </h1> 
+
+);
+
 
 
 
 const root = ReactDOM.createRoot(document.getElementById("root")) ;
-root.render(<HeadingComponent2 />) ;
+root.render(<HeadingComponent />) ;
