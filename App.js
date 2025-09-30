@@ -21,12 +21,15 @@ const jsxHeading = (
 
 
 //React Functional component
-const HeadingComponent = () => {
-  return <h1> Hello World from Functional Component </h1> ;
-} 
+const HeadingComponent = () => (
+   <h1> Hello World from Functional Component </h1> 
+  );
 //Both are same headingComponent and HeadingComponent2
 const HeadingComponent2 = () => (
-  <h1> Hello World from Functional Component 2 </h1>
+  <div>
+    <HeadingComponent />   //this is called composition of component or component composition
+    <h1> Hello World from Functional Component 2 </h1>
+  </div>
 ) ;
 
 
